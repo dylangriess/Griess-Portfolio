@@ -8,11 +8,12 @@
 :root {
   --darkblue: #13293d;
   --green: rgb(26, 76, 16);
+  --white: rgb(255, 255, 245);
 }
 
 body {
   font-size: 24px;
-  background-color: rgb(255, 255, 245);
+  background-color: var(--white);
 }
 
 header {
@@ -20,7 +21,6 @@ header {
   justify-content: space-between;
   align-items: center;
   min-width: 100vw;
-  margin-bottom: 1%;
 }
 
 h1 {
@@ -57,13 +57,10 @@ nav a {
 
 section {
   display: flex;
-  /* flex-direction: column; */
   border-bottom: 2px solid darkblue;
-  /* margin: 100px; */
-
   padding-top: 1%;
   padding-bottom: 1%;
-  margin: 5%;
+  margin: 1% 5% 2% 5%;
   align-items: center;
   flex-wrap: wrap;
   width: 90vw;
@@ -127,13 +124,31 @@ footer {
   display: flex;
   position: relative;
   left: 1%;
-  top: 30px;
+  align-items: center;
 }
 
 .my-projects {
   display: flex;
-  position: relative;
   display: inline-block;
+}
+
+.project-cards .card {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: stretch; */
+  width: 100%;
+}
+.card {
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px black;
+}
+.card img {
+  max-width: 100%;
+}
+.card .text {
+  padding: 0 20px 20px;
 }
 
 .contact-me {
