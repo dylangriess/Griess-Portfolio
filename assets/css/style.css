@@ -2,11 +2,15 @@
 * {
   font-family: "Barlow Condensed", sans-serif;
   box-sizing: border-box;
+  /* border: solid black 1px; */
+}
+
+:root {
+  --darkblue: #13293d;
+  --green: rgb(26, 76, 16);
 }
 
 body {
-  /* display: flex;
-  flex-direction: row; */
   font-size: 24px;
   background-color: rgb(255, 255, 245);
 }
@@ -15,13 +19,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  min-width: 100vw;
+  margin-bottom: 1%;
 }
 
 h1 {
-  font-size: 400%;
+  font-size: 4em;
   margin: 2%;
-  color: rgb(27, 77, 17);
+  color: var(--green);
 }
 
 h2 {
@@ -29,13 +34,12 @@ h2 {
 }
 
 h3 {
-  font-size: 125%;
+  font-size: 150%;
 }
 
-nav ul {
+nav ul li {
   justify-content: space-between;
-  min-width: 300px;
-  font-size: 125%;
+  font-size: 1.5em;
   margin: 10px 20px 0px 20px;
   display: inline;
 }
@@ -53,9 +57,17 @@ nav a {
 
 section {
   display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid darkblue;
-  margin: 100px;
+  /* flex-direction: column; */
+  border-bottom: 2px solid darkblue;
+  /* margin: 100px; */
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: center;
 }
 
 p {
@@ -67,16 +79,6 @@ p {
   border-bottom: 1px solid darkblue;
 } */
 
-article ul {
-  font-family: monospace;
-  list-style: square;
-  margin: 10px 20px 0px 20px;
-}
-
-aside {
-  width: 25%;
-}
-
 input,
 button {
   width: 100%;
@@ -85,18 +87,15 @@ button {
 }
 
 footer {
+  display: flex;
   justify-content: center;
   padding: 2%;
-  background-color: #13293d;
+  background-color: var(--green);
   color: #fff;
 }
 
-.contactform {
+.main-header {
   display: flex;
-  justify-content: center, space-evenly;
-  background-image: linear-gradient(black, darkblue);
-  display: inline-block;
-  width: 50%;
 }
 
 .banner {
@@ -109,11 +108,61 @@ footer {
   display: block;
 }
 
-#profpic img {
+.about-me {
   display: flex;
+  display: inline-block;
+}
+
+.about-me img {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
   float: left;
-  height: 300px;
-  width: 230px;
+  border: black solid 5px;
+  box-shadow: 5px 5px 5px grey;
+  align-items: center;
+}
+
+.about-me p {
+  display: flex;
+  position: relative;
+  left: 1%;
+  top: 30px;
+}
+
+.my-projects {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-me {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-links {
+  line-height: 200%;
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.contact-links ul {
+  list-style-type: square;
+  margin-left: 5%;
+}
+
+.contact-links a {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+.contactform {
+  display: flex;
+  justify-content: center, space-evenly;
+  display: inline-block;
+  width: 50%;
 }
 
 @media screen and (max-width: 768px) {

@@ -13,28 +13,32 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>Dylan Griess</h1>
       <nav>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">My Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </nav>
     </header>
+
     <div class="banner">
       <img class="banner-image" src="./assets/images/banner.jpg" />
     </div>
+
     <main>
-      <section class="aboutme">
+      <section class="about-me" id="about-me">
         <h2>About Me</h2>
         <img
-          id="profpic"
           src="./assets/images/profilepic.jpg"
           alt="profile picture"
+          height="309px"
+          width="232px"
         />
+
         <p>
           My name is Dylan Griess, and I am just beginning my journey as a
           software developer. I completed my undergraduate work from the
@@ -54,8 +58,8 @@
         </p>
       </section>
 
-      <section class="projects">
-        <h2>Projects</h2>
+      <section class="my-projects" id="my-projects">
+        <h2>My Projects</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus
           recusandae amet nostrum odit, ut unde non sint, quia sed inventore
@@ -67,19 +71,62 @@
         </p>
       </section>
 
-      <section>
-        <h3>Let's Work Together</h3>
+      <section class="contact-me" id="contact-me">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+          <p>Reach me by the links provided below.</p>
+          <ul>
+            <li>
+              My email address:
+              <a href="https://mail.google.com/mail/u/0/#inbox">G-mail</a>
+            </li>
+            <li>
+              My Github account:
+              <a href="https://github.com/dylangriess">Github</a>
+            </li>
+            <li>
+              My LinkedIn profile:
+              <a href="https://www.linkedin.com/in/dylan-griess-79bb23122/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <h3>Let's Work Together!</h3>
         <form class="contactform">
-          <input type="text" placeholder="First name" />
-          <input type="text" placeholder="Last name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Phone number" />
-          <button>Submit</button>
+          <p>
+            <label for="username">Name:</label>
+            <input
+              class="text-input"
+              id="username"
+              type="text"
+              placeholder="First Last"
+            />
+          </p>
+          <p>
+            <label for="email">E-mail:</label>
+            <input
+              class="text-input"
+              id="email"
+              type="text"
+              placeholder="me@example.com"
+            />
+          </p>
+          <p>
+            <label for="number">Number:</label>
+            <input
+              class="text-input"
+              id="number"
+              type="text"
+              placeholder="+1 (XXX) XXX-XXXX"
+            />
+          </p>
+          <p>
+            <button>Submit</button>
+          </p>
         </form>
       </section>
-      <aside>
-        <p>Filler Aside</p>
-      </aside>
     </main>
   </body>
   <footer>
