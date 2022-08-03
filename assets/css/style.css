@@ -60,7 +60,7 @@ section {
   border-bottom: 2px solid darkblue;
   padding-top: 1%;
   padding-bottom: 1%;
-  margin: 1% 5% 2% 5%;
+  margin: 1% 3% 2% 5%;
   align-items: center;
   flex-wrap: wrap;
   width: 90vw;
@@ -114,10 +114,8 @@ footer {
   position: relative;
   left: 0px;
   bottom: 0px;
-  float: left;
   border: black solid 5px;
   box-shadow: 5px 5px 5px grey;
-  align-items: center;
 }
 
 .about-me p {
@@ -129,26 +127,30 @@ footer {
 
 .my-projects {
   display: flex;
-  display: inline-block;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  /* display: inline-block;
+  flex-wrap: wrap; */
 }
 
-.project-cards .card {
-  display: flex;
-  flex-wrap: wrap;
-  /* align-items: stretch; */
-  width: 100%;
-}
 .card {
-  flex: 0 0 200px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px black;
+  display: row;
+  flex-wrap: wrap;
+  border: black solid 5px;
+  box-shadow: 5px 5px 5px grey;
+  margin: 20px;
+  width: 80%;
+  justify-content: space-between, space-evenly;
 }
+
 .card img {
-  max-width: 100%;
+  width: 50%;
+  height: auto;
 }
 .card .text {
-  padding: 0 20px 20px;
+  padding: 20px;
 }
 
 .contact-me {
