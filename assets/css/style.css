@@ -126,7 +126,7 @@ footer {
 }
 
 .my-projects {
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
@@ -137,6 +137,7 @@ footer {
 
 .card {
   display: row;
+  flex: 0 0 300px;
   flex-wrap: wrap;
   border: black solid 5px;
   box-shadow: 5px 5px 5px grey;
