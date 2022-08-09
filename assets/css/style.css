@@ -126,7 +126,7 @@ footer {
 }
 
 .my-projects {
-  display: inline-block;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
@@ -136,13 +136,13 @@ footer {
 }
 
 .card {
-  display: row;
-  flex: 0 0 300px;
+  display: flex;
+  flex: 0 0 200px;
   flex-wrap: wrap;
   border: black solid 5px;
   box-shadow: 5px 5px 5px grey;
   margin-top: 20px;
-  width: 80%;
+  width: 50%;
   justify-content: space-between, space-evenly;
 }
 
